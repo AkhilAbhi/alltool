@@ -13,10 +13,9 @@
 
 
 
-```
 
 ### prank your friends 
-
+```
 
 * visit https://akhilabhi.github.io/alltoolweb/
 
