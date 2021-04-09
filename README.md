@@ -1,23 +1,24 @@
-#All Toll 
+# All Toll 
 
-##one click hacking tools
+## one click hacking tools
 
 
 * **open your termux**
-* git clone https://github.com/AkhilAbhi/alltool
-* cd alltool
-* bash start.sh
+* `git clone https://github.com/AkhilAbhi/alltool`
+* `cd alltool`
+* `bash start.sh`
 *
 
 
 
 
 
+```
+
+### prank your friends 
 
 
-###prank your friends 
-
-
-*visit https://akhilabhi.github.io/alltoolweb/
+* visit https://akhilabhi.github.io/alltoolweb/
 
 *unlocking key
+```
