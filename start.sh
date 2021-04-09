@@ -17,7 +17,7 @@ hed(){
     printf "${cyan}"
     figlet __ALL_TOOL__
 }
-
+clear
 for i in git python figlet mpv ; do
 
 printf "${yellow} [?] chekking $i"
@@ -78,6 +78,5 @@ hed
 msg
 agr
 opn
-ch
 mpv a/mm.mp3
 python run.py
