@@ -78,5 +78,7 @@ hed
 msg
 agr
 opn
+cd $HOME
+cd alltool
 mpv a/mm.mp3
 python run.py
